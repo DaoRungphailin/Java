@@ -38,7 +38,7 @@ public class App extends Application {
 		});
 
 		Scene scene = new Scene(borderPane, 250, 250);
-		primaryStage.setTitle("Exercise_15_28"); 
+		primaryStage.setTitle("Lab 9.2 Program 5"); 
 		primaryStage.setScene(scene); 
 		primaryStage.show(); 
 		fanPane.requestFocus();

@@ -22,7 +22,7 @@ public class App extends Application {
 		});
 
 		Scene scene = new Scene(pane, 600, 100);
-		primaryStage.setTitle("Exercise_15_29"); 
+		primaryStage.setTitle("Lab9.2 Program 4"); 
 		primaryStage.setScene(scene);
 		primaryStage.show();
 		pane.requestFocus();
