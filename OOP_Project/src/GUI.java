@@ -13,7 +13,7 @@ public class GUI implements ActionListener {
     JTextArea textArea;
     JScrollPane scrollPane;
     JMenuBar menuBar;
-    JMenu menuFile, menuEdit;
+    JMenu menuFile;
     JMenuItem iNew, iOpen, iSave, iSaveAs, iExit;
     Function_File file = new Function_File(this);
 
@@ -47,8 +47,8 @@ public class GUI implements ActionListener {
         window.setJMenuBar(menuBar);
         menuFile = new JMenu("File");
         menuBar.add(menuFile);
-        menuEdit = new JMenu("Edit");
-        menuBar.add(menuEdit);
+        //menuEdit = new JMenu("Edit");
+        //menuBar.add(menuEdit);
     }
 
     public void createFileMenu() {
@@ -89,12 +89,13 @@ public class GUI implements ActionListener {
                 file.newFile();
                 break;
             case "Open":
-                file.open();
+                //update
+                file.open(window);
                 break;
             case "Save":
                 file.save();
                 break;
-            case "Save As":
+            case "SaveAs":
                 file.saveAs();
                 break;
             case "Exit":
