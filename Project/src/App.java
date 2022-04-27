@@ -72,9 +72,6 @@ public class App extends Application {
 
     //action
     public Object create() {
-        System.out.println("new");
-
-        textArea.setText("");
         fileName = null;
         if(fileName==null) {
             saveAs();
@@ -83,7 +80,6 @@ public class App extends Application {
     }
 
     public void open() throws IOException {
-        System.out.println("open");
 
         File selectedFile = fileChooser.showOpenDialog(primaryStage);
         String check = selectedFile.getPath().split("\\.")[1];
@@ -101,10 +97,7 @@ public class App extends Application {
                 alert.setHeaderText("This file can not be edit !");
                 alert.showAndWait();
             }
-            else {
-                System.out.println(
-                        "This File is writable.");
-            }
+
             String line;
             String[] colums;
 
@@ -123,7 +116,6 @@ public class App extends Application {
 
     }
     public void save () {
-        System.out.println("save");
 
         if (file_dummy.equals("")){
             FileChooser fileChooser = new FileChooser();
@@ -145,7 +137,6 @@ public class App extends Application {
     }
     
     public void saveAs() {
-        System.out.println("save as");
 
         FileChooser fileChooser = new FileChooser();
 
